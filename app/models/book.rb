@@ -7,4 +7,6 @@ class Book < ApplicationRecord
   validates :end_date, presence: false, allow_blank: true
   
   enum status: [:estante, :prestado]
+
+  paginates_per 10
 end

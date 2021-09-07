@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2021_01_15_191112) do
     t.string "title"
     t.string "author"
     t.string "name_person"
-    t.integer "status"
+    t.integer "status", default: 0
     t.date "start_date"
     t.date "end_date"
     t.datetime "created_at", null: false

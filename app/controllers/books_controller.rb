@@ -6,7 +6,7 @@ class BooksController < ApplicationController
   def index
     # @books = Book.all
     @q = Book.ransack(params[:q])
-    @books = @q.result(distinct:true)
+    @books = @q.result.page(params[:page])
   end
 
   # GET /books/1

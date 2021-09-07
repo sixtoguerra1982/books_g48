@@ -4,7 +4,7 @@ class CreateBooks < ActiveRecord::Migration[5.2]
       t.string :title
       t.string :author
       t.string :name_person
-      t.integer :status
+      t.integer :status, default: 0
       t.date :start_date
       t.date :end_date
 
